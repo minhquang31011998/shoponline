@@ -22,9 +22,9 @@ class ShopController extends Controller
     }
      public function addFeedback()
     {
-        $data['name'] = 'chinh';
-        $data['email'] = 'nguyenducchinh21071998@gmail.com';
-        $email =  'nguyenducchinh21071998@gmail.com';
+        $data['name'] = 'quang';
+        $data['email'] = 'minhquang31011998@gmail.com';
+        $email =  'minhquang31011998@gmail.com';
         // $input = $request->all();
         Mail::send('form', array('name'=>$data), function($message) use ($email){
                     $message->to($email, 'ShopCHT')->subject('Đặt hàng thành công !');
